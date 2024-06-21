@@ -137,10 +137,15 @@ aside {
 }
 
 .products-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   padding: 0px 20px;
 }
 
 .product-card {
+  width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,7 +159,7 @@ aside {
 
 .product-image {
   width: 150px;
-  border: 1px solid #dcdcdc;
+  /* border: 1px solid #dcdcdc; */
 }
 
 #main-content {
