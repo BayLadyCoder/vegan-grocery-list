@@ -133,6 +133,7 @@ nav h1 p {
 }
 
 aside {
+  width: 200px;
   border: 1px solid #000;
   padding: 20px;
   border-radius: 5px;
@@ -183,14 +184,29 @@ aside {
 
 .add-btn {
   padding: 7px 12px;
-  background-color: #1ba136;
-  color: #fff;
+
   font-weight: bold;
   border-radius: 5px;
   border: 1px solid #8b8b8b;
   cursor: pointer;
 }
 
-.add-btn:hover {
+.add-to-list {
+  background-color: #1ba136;
+  color: #fff;
+}
+
+.add-to-list:hover {
   background-color: #17882e;
+}
+
+.remove-from-list {
+  background-color: #341800;
+  background-color: #e4e4e4;
+  color: #000;
+}
+
+.remove-from-list:hover {
+  background-color: #cd1c0c;
+  color: #fff;
 }
