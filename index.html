@@ -48,10 +48,47 @@
         <i class="fas fa-search"></i>
         <input type="text" placeholder="Find Product..." />
       </div>
-      <section class="flex justify-content-center">
+      <section
+        class="flex justify-content-center"
+        style="align-items: flex-start"
+      >
         <aside>
-          <p>Filters</p>
-          <p>Sort</p>
+          <div>
+            <div class="sort-by">
+              <p style="display: inline">Sort by</p>
+              <select name="sortBy" id="">
+                <option value="nameA-Z">A-Z</option>
+                <option value="nameZ-A">Z-A</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <p class="filter-by">Filter by</p>
+            <div class="checkbox-container">
+              <input type="checkbox" />
+              <label for="produce">Produce</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" />
+              <label for="produce">Dairy</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" />
+              <label for="produce">Protein</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" />
+              <label for="produce">Dessert</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" />
+              <label for="produce">Noodles</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" />
+              <label for="produce">Snacks</label>
+            </div>
+          </div>
         </aside>
         <div class="products-container">
           <div class="product-card">
