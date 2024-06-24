@@ -92,7 +92,7 @@ export const products = [
   },
   {
     id: 6,
-    name: "Oatly Oatmilk",
+    name: "Oatmilk",
     category: "Dairy",
     media: [
       {
@@ -130,7 +130,7 @@ export const products = [
   },
   {
     id: 8,
-    name: "Beyond Burger Patties",
+    name: "Beyond Burger",
     category: "Protein",
     media: [
       {
@@ -217,7 +217,7 @@ export const products = [
   },
   {
     id: 13,
-    name: "Follow Your Heart Mozzarella",
+    name: "Mozzarella Cheese",
     category: "Dairy",
     media: [
       {
@@ -236,7 +236,7 @@ export const products = [
   },
   {
     id: 14,
-    name: "Soon Veggie Ramen",
+    name: "Veggie Ramen",
     category: "Noodles",
     media: [
       {
@@ -257,7 +257,7 @@ export const products = [
   },
   {
     id: 15,
-    name: "Gardein Chicken Tender",
+    name: "Chicken Tender",
     category: "Protein",
     media: [
       {
@@ -272,7 +272,7 @@ export const products = [
   },
   {
     id: 16,
-    name: "Oatly Vanilla Ice Cream",
+    name: "Vanilla Ice Cream",
     category: "Dessert",
     media: [
       {
@@ -287,7 +287,7 @@ export const products = [
   },
   {
     id: 17,
-    name: "So Delicious Ice Cream Sandwiches",
+    name: "Ice Cream Sandwiches",
     category: "Dessert",
     media: [
       {
