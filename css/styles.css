@@ -64,7 +64,6 @@ nav h1 p {
 }
 
 .nav-menu-container {
-  /* width: 50%; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -77,6 +76,11 @@ nav h1 p {
   border-radius: 10px;
   font-size: 20px;
   cursor: pointer;
+}
+
+.nav-menu-container li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav-menu-container li:hover {
