@@ -15,6 +15,14 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/addNewProductStyles.css" />
+    <style>
+      .input-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+    </style>
   </head>
   <body>
     <nav class="flex justify-content-center align-items-center">
@@ -33,15 +41,62 @@
           </li>
           <li>
             <i class="fas fa-plus"></i>
-            <a href="/addNewProduct.html">Add Product</a>
+            <a href="/addNewProduct.html">New Product</a>
           </li>
           <li>
             <i class="fas fa-edit"></i>
-            Grocery List
+            <a href="/">Grocery List</a>
           </li>
         </ul>
       </div>
     </nav>
-    <h1>Add New Product</h1>
+    <main style="display: flex; justify-content: center">
+      <form
+        action=""
+        style="display: flex; flex-direction: column; width: 500px; gap: 20px"
+      >
+        <div style="display: flex; justify-content: space-between">
+          <h1>Add New Product</h1>
+          <button id="close-form-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="input-container">
+          <label for="product-name">Product Name</label>
+          <input type="text" name="product-name" id="product-name-input" />
+        </div>
+        <div class="input-container">
+          <label for="product-category">Product Category</label>
+          <select id="product-category-select" name="product-category">
+            <option value="Produce">Choose One</option>
+            <option value="Produce">Produce</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Protein">Protein</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Noodles">Noodles</option>
+            <option value="Snacks">Snacks</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="product-media-url">Product Media URLs</label>
+          <input
+            type="text"
+            name="media-url-1"
+            class="product-media-url-input"
+          />
+          <input
+            type="text"
+            name="media-url-2"
+            class="product-media-url-input"
+          />
+          <input
+            type="text"
+            name="media-url-3"
+            class="product-media-url-input"
+          />
+        </div>
+        <button>ADD PRODUCT</button>
+      </form>
+    </main>
   </body>
 </html>
