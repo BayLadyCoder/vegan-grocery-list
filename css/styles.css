@@ -151,8 +151,8 @@ aside {
 }
 
 .product-card {
+  flex: 1;
   min-width: 230px;
-  max-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
