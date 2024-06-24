@@ -12,3 +12,4 @@ addEventListeners();
 // todo: implement filter by functionality
 // todo: create add product form
 // todo: create add product function (save to local storage)
+// todo: create product detail page
