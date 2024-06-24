@@ -1,6 +1,4 @@
-import { products } from "../data/products.js";
-
-const createProductCardHTML = (product, isOnList) => {
+export const createProductCardHTML = (product, isOnList) => {
   const buttonClass = isOnList ? "remove-from-list" : "add-to-list";
   const buttonText = isOnList ? "REMOVE FROM LIST" : "ADD TO LIST";
   return `
@@ -27,7 +25,7 @@ const createProductCardHTML = (product, isOnList) => {
           `;
 };
 
-export const renderProductCards = () => {
+export const renderProductCards = (products = []) => {
   const productsContainer = document.querySelector(".products-container");
   products.forEach((product) => {
     productsContainer.insertAdjacentHTML(
