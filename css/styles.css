@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #ffffff;
+}
+
 body,
 p,
 button,
@@ -119,57 +123,52 @@ a {
   align-items: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .gap-10 {
   gap: 10px;
 }
 
 .search-container {
   padding: 20px;
+  padding-bottom: 0px;
 }
 
 .search-container input {
   margin: 0 8px;
   padding: 8px 10px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 18px;
   width: 300px;
   border: 1px solid #8b8b8b;
 }
 
 .fa-search {
-  font-size: 22px;
-}
-
-aside {
-  min-width: 200px;
-  border: 1px solid #000;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: #fff;
-  height: content;
+  font-size: 27px;
 }
 
 .products-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding: 0px 20px;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
 .product-card {
   flex: 1;
-  min-width: 230px;
+  min-width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px 0px;
-  border: 1px solid #000000;
+  padding: 20px;
   border-radius: 5px;
   background-color: #fff;
   gap: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .product-image {
@@ -180,16 +179,17 @@ aside {
 #main-content {
   width: 80%;
   height: 100%;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   padding: 10px;
 }
 
 .product-quantity {
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 16px;
   width: 50px;
   text-align: center;
   border: 1px solid #8b8b8b;
+  padding: 5px;
 }
 
 .add-btn {
@@ -199,6 +199,7 @@ aside {
   border-radius: 5px;
   border: 1px solid #8b8b8b;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .add-to-list {
@@ -230,19 +231,37 @@ aside {
   background-color: #cfcfcf;
 }
 
+aside {
+  width: 100%;
+  min-width: 200px;
+  border: 1px solid rgb(176, 176, 176);
+  margin: 20px 0;
+  border-radius: 5px;
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sort-by {
   font-weight: 600;
-  margin-right: 5px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-left: 1px solid rgb(176, 176, 176);
+  padding: 10px 30px;
 }
 
 .filter-by {
   font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.checkbox-container {
-  margin-bottom: 5px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 30px;
 }
 
 form,
