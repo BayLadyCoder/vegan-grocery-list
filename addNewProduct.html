@@ -67,36 +67,101 @@
         </div>
         <div class="input-container">
           <label for="product-category">Product Category</label>
-          <select id="product-category-select" name="product-category">
-            <option value="Produce">Choose One</option>
-            <option value="Produce">Produce</option>
-            <option value="Dairy">Dairy</option>
-            <option value="Protein">Protein</option>
-            <option value="Dessert">Dessert</option>
-            <option value="Noodles">Noodles</option>
-            <option value="Snacks">Snacks</option>
-          </select>
+
+          <div>
+            <input
+              type="radio"
+              id="Produce"
+              name="product-category"
+              value="Produce"
+            />
+            <label for="Produce">Produce</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="Dairy"
+              name="product-category"
+              value="Dairy"
+            />
+            <label for="Dairy">Dairy</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="Protein"
+              name="product-category"
+              value="Protein"
+            />
+            <label for="Protein">Protein</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="Dessert"
+              name="product-category"
+              value="Dessert"
+            />
+            <label for="Dessert">Dessert</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="Noodles"
+              name="product-category"
+              value="Noodles"
+            />
+            <label for="Noodles">Noodles</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="Snacks"
+              name="product-category"
+              value="Snacks"
+            />
+            <label for="Snacks">Snacks</label>
+          </div>
         </div>
         <div class="input-container">
           <label for="product-media-url">Product Media URLs</label>
-          <input
-            type="text"
-            name="media-url-1"
-            class="product-media-url-input"
-          />
-          <input
-            type="text"
-            name="media-url-2"
-            class="product-media-url-input"
-          />
-          <input
-            type="text"
-            name="media-url-3"
-            class="product-media-url-input"
-          />
+          <div>
+            <select id="media-type-1-select-1" name="media-type-1">
+              <option value="Image">Image</option>
+              <option value="Video">Video</option>
+            </select>
+            <input
+              type="text"
+              name="media-url-1"
+              class="product-media-url-input"
+            />
+          </div>
+          <div>
+            <select id="media-type-1-select-2" name="media-type-1">
+              <option value="Image">Image</option>
+              <option value="Video">Video</option>
+            </select>
+            <input
+              type="text"
+              name="media-url-2"
+              class="product-media-url-input"
+            />
+          </div>
+          <div>
+            <select id="media-type-1-select-3" name="media-type-1">
+              <option value="Image">Image</option>
+              <option value="Video">Video</option>
+            </select>
+            <input
+              type="text"
+              name="media-url-3"
+              class="product-media-url-input"
+            />
+          </div>
         </div>
-        <button>ADD PRODUCT</button>
+        <button id="add-product-btn">ADD PRODUCT</button>
       </form>
     </main>
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>
