@@ -244,3 +244,10 @@ aside {
 .checkbox-container {
   margin-bottom: 5px;
 }
+
+form,
+input,
+label,
+select {
+  font-family: "Inter", sans-serif;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vegan Grocery List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+NZ:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/da84e60c83.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <style>
+      #main-content {
+        margin-top: 40px;
+        background-color: rgb(110, 45, 5);
+        width: 80%;
+        max-width: 750px;
+        padding: 40px 50px;
+        border-radius: 5px;
+        background: linear-gradient(
+          180deg,
+          rgba(50, 19, 3, 1) 0%,
+          rgba(128, 56, 0, 1) 100%,
+          rgba(108, 46, 7, 1) 100%
+        );
+      }
+
+      #main-content h1 {
+        font-size: 50px;
+        font-weight: 600;
+        padding-bottom: 15px;
+        color: #ff8119;
+      }
+
+      #categories {
+        gap: 30px;
+      }
+
+      .category-container {
+        line-height: 25px;
+        font-size: 17px;
+        margin-bottom: 20px;
+        padding: 10px 20px 10px 20px;
+      }
+      .category-container h2 {
+        margin-bottom: 15px;
+      }
+
+      fieldset {
+        background-color: #ffdea0;
+        color: rgb(62, 27, 6);
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+
+      legend {
+        background-color: rgb(231, 124, 2);
+        color: white;
+        padding: 10px 20px;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 3px;
+      }
+
+      input {
+        margin: 5px;
+      }
+
+      /* The container */
+      .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 20px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      /* Hide the browser's default checkbox */
+      .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      /* Create a custom checkbox */
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #fff;
+        border: 1px solid #000;
+      }
+
+      /* On mouse-over, add a grey background color */
+      .container:hover input ~ .checkmark {
+        background-color: #ededed;
+      }
+
+      /* When the checkbox is checked, add a blue background */
+      .container input:checked ~ .checkmark {
+        background-color: #ff8119;
+        background-color: #65c349;
+      }
+
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      /* Show the checkmark when checked */
+      .container input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      /* Style the checkmark/indicator */
+      .container .checkmark:after {
+        left: 8px;
+        top: 3px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body class="flex flex-column align-items-center">
+    <nav class="flex justify-content-center align-items-center">
+      <div id="nav-content">
+        <h1 class="flex items-center">
+          <img id="logo" src="./img/logos/logo-transparent.png" alt="logo" />
+          <div>
+            <p class="vegan-text">VEGAN</p>
+            <p class="grocery-list-text">GROCERY LIST</p>
+          </div>
+        </h1>
+        <ul class="nav-menu-container">
+          <li>
+            <i class="fas fa-home"></i>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <i class="fas fa-plus"></i>
+            <a href="/addNewProduct.html">New Product</a>
+          </li>
+          <li>
+            <i class="fas fa-edit"></i>
+            <a href="/grocery-list.html">Grocery List</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main
+      id="main-content"
+      class="flex flex-column align-items-center justify-content-center"
+    >
+      <h1 style="margin-bottom: 20px">
+        <!-- <i class="fa-solid fa-check"></i> -->
+        <!-- <i class="fa-solid fa-clipboard-check"></i> -->
+        <i
+          style="font-size: 45px; color: #65c349"
+          class="fa-solid fa-cart-shopping"
+        ></i>
+        GROCERY LIST
+      </h1>
+      <div
+        id="categories"
+        class="flex justify-content-center"
+        style="width: 100%"
+      >
+        <div
+          style="width: 50%; justify-content: space-between"
+          class="flex flex-column"
+        >
+          <fieldset class="category-container">
+            <legend>Produce</legend>
+            <label class="container"
+              >Mango (99)
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Bananas (1)
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Apple (5)
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Carrots (1)
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </fieldset>
+
+          <fieldset class="category-container">
+            <legend>Protein</legend>
+            <label class="container"
+              >Chicken Tender (1)
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Tofu (3)
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </fieldset>
+        </div>
+        <div
+          style="width: 50%; justify-content: space-between"
+          class="flex flex-column"
+        >
+          <fieldset class="category-container">
+            <legend>Dairy</legend>
+            <label class="container"
+              >Oat Milk (1)
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >American Cheese (1)
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </fieldset>
+          <fieldset class="category-container">
+            <legend>Desserts</legend>
+            <label class="container"
+              >Vanilla Ice Cream (2)
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </fieldset>
+          <fieldset class="category-container">
+            <legend>Others</legend>
+            <label class="container"
+              >Cheese Crackers (1)
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </fieldset>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
