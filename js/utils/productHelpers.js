@@ -11,15 +11,16 @@ export const createProductCardHTML = (product, isOnList) => {
                   />
                   <div class="flex-center-center gap-10">
                       <input
-                      class="product-quantity"
-                      type="number"
-                      min="1"
-                      max="100"
-                      value="1"
-                      name=""
-                      id=""
+                        class="product-quantity"
+                        type="number"
+                        min="1"
+                        max="100"
+                        value="1"
+                        name=""
+                        id=""
                       />
                       <button class="add-btn ${buttonClass}">${buttonText}</button>
+                      <button class="add-btn info-btn"><a href="/bananas.html">INFO</a></button>
                   </div>
               </div>
           `;

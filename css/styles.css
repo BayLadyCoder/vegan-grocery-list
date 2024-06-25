@@ -78,8 +78,12 @@ nav h1 p {
   cursor: pointer;
 }
 
-.nav-menu-container li a {
+a {
   text-decoration: none;
+  color: #000;
+}
+
+.nav-menu-container li a {
   color: #fff;
 }
 
@@ -215,6 +219,15 @@ aside {
 .remove-from-list:hover {
   background-color: #cd1c0c;
   color: #fff;
+}
+
+.info-btn {
+  background-color: #e4e4e4;
+  color: #000;
+}
+
+.info-btn:hover {
+  background-color: #cfcfcf;
 }
 
 .sort-by {
