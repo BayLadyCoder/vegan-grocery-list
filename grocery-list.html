@@ -16,8 +16,11 @@
     ></script>
     <link rel="stylesheet" href="./css/styles.css" />
     <style>
+      body {
+        background-color: #f2f2f2;
+      }
       #main-content {
-        margin-top: 40px;
+        /* margin-top: 40px; */
         background-color: rgb(110, 45, 5);
         width: 80%;
         max-width: 750px;
@@ -29,6 +32,8 @@
           rgba(128, 56, 0, 1) 100%,
           rgba(108, 46, 7, 1) 100%
         );
+        height: fit-content;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
 
       #main-content h1 {
@@ -143,7 +148,7 @@
       }
     </style>
   </head>
-  <body class="flex flex-column align-items-center">
+  <body class="flex flex-column align-items-center" style="height: 100vh">
     <nav class="flex justify-content-center align-items-center">
       <div id="nav-content">
         <h1 class="flex items-center">
@@ -169,102 +174,117 @@
         </ul>
       </div>
     </nav>
-    <main
-      id="main-content"
-      class="flex flex-column align-items-center justify-content-center"
-    >
-      <h1 style="margin-bottom: 20px">
-        <!-- <i class="fa-solid fa-check"></i> -->
-        <!-- <i class="fa-solid fa-clipboard-check"></i> -->
-        <i
-          style="font-size: 45px; color: #65c349"
-          class="fa-solid fa-cart-shopping"
-        ></i>
-        GROCERY LIST
-      </h1>
-      <div
-        id="categories"
-        class="flex justify-content-center"
-        style="width: 100%"
+    <div class="flex-center-center" style="width: 100vw; height: 100%">
+      <main
+        id="main-content"
+        class="flex flex-column align-items-center justify-content-center"
       >
+        <h1 style="margin-bottom: 20px">
+          <i
+            style="font-size: 45px; color: #65c349"
+            class="fa-solid fa-cart-shopping"
+          ></i>
+          GROCERY LIST
+        </h1>
         <div
-          style="width: 50%; justify-content: space-between"
-          class="flex flex-column"
+          id="categories"
+          class="flex justify-content-center"
+          style="width: 100%"
         >
-          <fieldset class="category-container">
-            <legend>Produce</legend>
-            <label class="container"
-              >Mango (99)
-              <input type="checkbox" checked="checked" />
-              <span class="checkmark"></span>
-            </label>
-            <label class="container"
-              >Bananas (1)
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <label class="container"
-              >Apple (5)
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <label class="container"
-              >Carrots (1)
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-          </fieldset>
+          <div
+            style="width: 50%; justify-content: space-between"
+            class="flex flex-column"
+          >
+            <fieldset class="category-container">
+              <legend>Produce</legend>
+              <label class="container"
+                >Mango (99)
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Bananas (1)
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Apple (5)
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Carrots (1)
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </fieldset>
 
-          <fieldset class="category-container">
-            <legend>Protein</legend>
-            <label class="container"
-              >Chicken Tender (1)
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <label class="container"
-              >Tofu (3)
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-          </fieldset>
+            <fieldset class="category-container">
+              <legend>Protein</legend>
+              <label class="container"
+                >Chicken Tender (1)
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Tofu (3)
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Beyond Burger (1)
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Lightlife Bacon (1)
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </fieldset>
+          </div>
+          <div
+            style="width: 50%; justify-content: space-between"
+            class="flex flex-column"
+          >
+            <fieldset class="category-container">
+              <legend>Dairy</legend>
+              <label class="container"
+                >Oat Milk (1)
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >American Cheese (1)
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </fieldset>
+            <fieldset class="category-container">
+              <legend>Desserts</legend>
+              <label class="container"
+                >Vanilla Ice Cream (2)
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"
+                >Ice Cream Sandwiches (1)
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </fieldset>
+            <fieldset class="category-container">
+              <legend>Others</legend>
+              <label class="container"
+                >Cheese Crackers (1)
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </fieldset>
+          </div>
         </div>
-        <div
-          style="width: 50%; justify-content: space-between"
-          class="flex flex-column"
-        >
-          <fieldset class="category-container">
-            <legend>Dairy</legend>
-            <label class="container"
-              >Oat Milk (1)
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <label class="container"
-              >American Cheese (1)
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-          </fieldset>
-          <fieldset class="category-container">
-            <legend>Desserts</legend>
-            <label class="container"
-              >Vanilla Ice Cream (2)
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-          </fieldset>
-          <fieldset class="category-container">
-            <legend>Others</legend>
-            <label class="container"
-              >Cheese Crackers (1)
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-          </fieldset>
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
     <script type="module" src="./js/app.js"></script>
   </body>
 </html>
