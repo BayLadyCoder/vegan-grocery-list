@@ -3,6 +3,42 @@ export const products = [
     id: 1,
     name: "Bananas",
     category: "Produce",
+    pageUrl: "/banana.html",
+    description: `Bananas are a popular tropical fruit known for their sweet flavor,
+      creamy texture, and vibrant yellow skin. They are rich in essential
+      nutrients like potassium, vitamin C, vitamin B6, and dietary fiber,
+      making them an excellent source of energy and a healthy snack option.
+      Versatile in culinary applications, bananas can be eaten fresh, added
+      to cereals, blended into smoothies, baked into goods, or even grilled.
+      Regular consumption supports heart health, blood pressure regulation,
+      and digestive health. Bananas are a delicious, nutritious choice for a
+      quick snack or a versatile ingredient in various recipes.`,
+    nutritionFacts: [
+      {
+        servingSize: { amount: 1, unit: "large" },
+        gramWeight: { amount: 242, unit: "g" },
+        ounceWeight: { amount: 8, unit: "oz" },
+        calories: { amount: 0 },
+        cholesterolMg: { amount: 0, unit: "mg" },
+        cholesterolDV: { amount: 0, unit: "%DV" },
+        totalFatG: { amount: 0, unit: "g" },
+        totalFatDV: { amount: 0, unit: "%DV" },
+        sodiumMg: { amount: 0, unit: "mg" },
+        sodiumDV: { amount: 0, unit: "%DV" },
+        potassiumMg: { amount: 0, unit: "mg" },
+        potassiumDV: { amount: 0, unit: "%DV" },
+        totalCarbG: { amount: 0, unit: "g" },
+        totalCarbDV: { amount: 0, unit: "%DV" },
+        dietaryFiberG: { amount: 0, unit: "g" },
+        dietaryFiberDV: { amount: 0, unit: "%DV" },
+        sugar: { amount: 0, unit: "g" },
+        protein: { amount: 0, unit: "g" },
+        vitaminA: { amount: 0, unit: "%DV" },
+        vitaminC: { amount: 0, unit: "%DV" },
+        calcium: { amount: 0, unit: "%DV" },
+        iron: { amount: 0, unit: "%DV" },
+      },
+    ],
     media: [
       {
         type: "image",
@@ -44,7 +80,7 @@ export const products = [
     media: [
       {
         type: "image",
-        url: "https://i5.walmartimages.com/seo/Fresh-Mangoes-Each-Sweet_cc54242f-cb87-4a25-9baa-fccaa20f5443.64fa79325ad44a7352dcd3c2a8b477be.jpeg",
+        url: "https://i5.peapod.com/c/I9/I99VC.jpg",
       },
       {
         type: "image",
@@ -273,7 +309,7 @@ export const products = [
   {
     id: 16,
     name: "Vanilla Ice Cream",
-    category: "Dessert",
+    category: "Desserts",
     media: [
       {
         type: "image",
@@ -288,7 +324,7 @@ export const products = [
   {
     id: 17,
     name: "Ice Cream Sandwiches",
-    category: "Dessert",
+    category: "Desserts",
     media: [
       {
         type: "image",
@@ -322,7 +358,7 @@ export const products = [
   {
     id: 19,
     name: "Cheese Crackers",
-    category: "Snacks",
+    category: "Others",
     media: [
       {
         type: "image",
