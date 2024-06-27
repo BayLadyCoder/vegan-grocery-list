@@ -5,7 +5,7 @@ import { getDisplayProducts } from "./displayProducts.js";
 console.log(window.location.pathname);
 const { pathname } = window.location;
 
-if (!pathname.includes(".html")) {
+if (pathname === "/index.html" || pathname === "/") {
   renderProductCards(getDisplayProducts());
   addEventListeners();
 }
@@ -13,7 +13,6 @@ if (!pathname.includes(".html")) {
 // todo: create add product form (name (a-zA-Z and spaces only) , category(radio buttons), media urls (validate urls), mediaType (dropdown, image or video))
 // todo: add form validation using RegEx
 // todo: create product detail page (carousel, product description, nutrition facts table)
-// todo: display grocery list
 // todo: create add to list function
 // todo: display button correctly according to product on the list
 
