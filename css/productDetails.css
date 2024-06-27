@@ -28,6 +28,7 @@ main {
   text-indent: 30px;
   text-align: justify;
   font-family: "Inter", sans-serif;
+  line-height: 25px;
 }
 
 #nutrition-table {
