@@ -238,12 +238,21 @@
           "product-name-error-message"
         );
 
-        if (productNameInput.value === "") {
+        const productNameValue = productNameInput.value.trim();
+        productNameInput.value = productNameValue;
+
+        if (productNameValue === "") {
           productNameErrorMessage.style.display = "block";
           productNameErrorMessage.textContent = "* Product name is required *";
         } else {
-          // add regex validation
-          productNameErrorMessage.style.display = "none";
+          const regex = new RegExp("^[a-zA-Z ]+$");
+          if (regex.test(productNameValue)) {
+            productNameErrorMessage.style.display = "none";
+          } else {
+            productNameErrorMessage.style.display = "block";
+            productNameErrorMessage.textContent =
+              "* Please enter valid product name (a-Z, A-Z, and spaces only) *";
+          }
         }
       };
 
