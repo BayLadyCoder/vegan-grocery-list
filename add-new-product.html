@@ -129,6 +129,10 @@
         <div id="form-body">
           <fieldset class="input-container">
             <legend for="product-category">Product Name</legend>
+            <p
+              id="product-name-error-message"
+              style="font-size: 13px; color: red; display: none"
+            ></p>
             <input
               type="text"
               placeholder="Enter product name"
@@ -138,6 +142,12 @@
           </fieldset>
           <fieldset class="input-container">
             <legend for="product-category">Product Category</legend>
+            <p
+              id="product-category-error-message"
+              style="font-size: 13px; color: red; display: none"
+            >
+              * Product category is required *
+            </p>
             <label class="container"
               >Produce
               <input type="radio" name="product-category" />
@@ -171,6 +181,12 @@
           </fieldset>
           <fieldset class="input-container">
             <legend for="product-media-url">Product Media URLs</legend>
+            <p
+              id="product-media-url-error-message"
+              style="font-size: 13px; color: red; display: none"
+            >
+              * Product media URL is required *
+            </p>
             <div class="img-url-input-container">
               <select id="media-type-1-select-1" name="media-type-1">
                 <option value="Image">Image</option>
@@ -215,5 +231,67 @@
       </form>
     </main>
     <script type="module" src="./js/app.js"></script>
+    <script>
+      const validateProductName = () => {
+        const productNameInput = document.getElementsByName("product-name")[0];
+        const productNameErrorMessage = document.getElementById(
+          "product-name-error-message"
+        );
+
+        if (productNameInput.value === "") {
+          productNameErrorMessage.style.display = "block";
+          productNameErrorMessage.textContent = "* Product name is required *";
+        } else {
+          // add regex validation
+          productNameErrorMessage.style.display = "none";
+        }
+      };
+
+      const validateProductCategory = () => {
+        const productCategoryOptions =
+          document.getElementsByName("product-category");
+        const productCategoryErrorMessage = document.getElementById(
+          "product-category-error-message"
+        );
+        let hasChecked = false;
+
+        for (let i = 0; i < productCategoryOptions.length; i++) {
+          if (productCategoryOptions[i].checked) {
+            hasChecked = true;
+            break;
+          }
+        }
+
+        if (!hasChecked) {
+          productCategoryErrorMessage.style.display = "block";
+        } else {
+          productCategoryErrorMessage.style.display = "none";
+        }
+      };
+
+      const validateProductMediaURL = () => {
+        const productMediaURL1Input =
+          document.getElementsByName("media-url-1")[0];
+        const productMediaURLErrorMessage = document.getElementById(
+          "product-media-url-error-message"
+        );
+
+        if (productMediaURL1Input.value === "") {
+          productMediaURLErrorMessage.style.display = "block";
+        } else {
+          productMediaURLErrorMessage.style.display = "none";
+        }
+      };
+
+      const addProductButton = document.querySelector("#add-product-btn");
+
+      addProductButton.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        validateProductName();
+        validateProductCategory();
+        validateProductMediaURL();
+      });
+    </script>
   </body>
 </html>
