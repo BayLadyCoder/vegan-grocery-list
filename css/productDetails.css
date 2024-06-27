@@ -8,12 +8,12 @@ main {
   background-color: #fff;
   width: 80%;
   max-width: 900px;
-  padding: 40px 0;
-  margin: 40px;
+  padding: 30px 0;
+  margin: 20px;
 }
 
 .container {
-  gap: 20px;
+  gap: 15px;
   padding: 0 8%;
 }
 
@@ -24,10 +24,6 @@ main {
   font-family: "Raleway", sans-serif;
 }
 
-img {
-  width: 30%;
-}
-
 #product-description {
   text-indent: 30px;
   text-align: justify;
@@ -36,4 +32,8 @@ img {
 
 #nutrition-table {
   font-family: "Inter", sans-serif;
+}
+
+.img-slide-button {
+  padding: 5px 10px;
 }
