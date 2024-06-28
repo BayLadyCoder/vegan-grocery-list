@@ -20,7 +20,7 @@
       body {
         background-color: #f2f2f2;
         width: 100vw;
-        height: 100vh;
+        height: calc(100vh - 138px);
       }
     </style>
     <style>
@@ -230,6 +230,12 @@
         </div>
       </form>
     </main>
+    <footer class="flex-center-center">
+      <p>
+        Copyright <i class="fa-regular fa-copyright"></i> 2024 - Developed and
+        Designed by Bay Grove
+      </p>
+    </footer>
     <script>
       const validateProductName = () => {
         const productNameInput = document.getElementsByName("product-name")[0];

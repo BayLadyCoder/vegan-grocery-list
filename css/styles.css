@@ -298,3 +298,12 @@ label,
 select {
   font-family: "Inter", sans-serif;
 }
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: #707070;
+  height: 50px;
+  width: 100vw;
+  color: #fff;
+}
