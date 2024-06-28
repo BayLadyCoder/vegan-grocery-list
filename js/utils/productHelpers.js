@@ -9,7 +9,7 @@ export const createProductCardHTML = (product, isOnList) => {
                       src="${product.media[0].url}"
                       alt="${product.name}"
                   />
-                  <div class="flex-center-center gap-10">
+                  <div  class="flex justify-between gap-10">
                       <input
                         class="product-quantity"
                         type="number"
@@ -20,7 +20,7 @@ export const createProductCardHTML = (product, isOnList) => {
                         id=""
                       />
                       <button class="add-btn ${buttonClass}">${buttonText}</button>
-                      <button class="add-btn info-btn"><a href="/bananas.html">INFO</a></button>
+                      <button class="info-btn"><a href="/bananas.html">INFO</a></button>
                   </div>
               </div>
           `;

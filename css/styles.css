@@ -120,6 +120,10 @@ a {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-around;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -128,6 +132,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gap-10 {
+  gap: 10px;
 }
 
 .flex-wrap {
@@ -172,7 +180,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 20px 20px;
   border-radius: 5px;
   background-color: #fff;
   gap: 8px;
@@ -195,7 +203,6 @@ a {
 
 .add-btn {
   padding: 7px 12px;
-
   font-weight: bold;
   border-radius: 5px;
   border: 1px solid #8b8b8b;
@@ -204,18 +211,21 @@ a {
 }
 
 .add-to-list {
-  background-color: #1ba136;
+  background-color: #0d881f;
   color: #fff;
 }
 
 .add-to-list:hover {
-  background-color: #17882e;
+  background-color: rgb(19, 112, 38);
+}
+
+.add-to-list:active {
+  transform: translateY(1px);
 }
 
 .remove-from-list {
-  background-color: #341800;
-  background-color: #e4e4e4;
-  color: #000;
+  background-color: #d51f0f;
+  color: #fff;
 }
 
 .remove-from-list:hover {
@@ -223,15 +233,30 @@ a {
   color: #fff;
 }
 
+.remove-from-list:active {
+  transform: translateY(1px);
+}
+
 .info-btn {
-  background-color: #713500;
+  padding: 7px 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #8b8b8b;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: #eaeaea;
+  border: 1px solid #a8a8a8;
 }
 .info-btn a {
-  color: #fff;
+  color: #202020;
 }
 
 .info-btn:hover {
-  background-color: #5e2c00;
+  background-color: #dfdfdf;
+}
+
+.info-btn:active {
+  transform: translateY(1px);
 }
 
 aside {

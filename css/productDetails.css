@@ -36,20 +36,21 @@ main {
 }
 
 .img-slide-button {
-  padding: 10px 20px;
-  background-color: #7c4707;
-  border: 1px solid #7c4707;
+  padding: 6px 10px;
+  background-color: #efefef;
+  border: 1px solid #dfdfdf;
   border-radius: 5px;
-  color: #fff;
   cursor: pointer;
-  font-weight: 600;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-weight: 500;
+  color: #464646;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 3px 0px;
 }
 
 .img-slide-button:hover {
-  background-color: #673b06;
+  background-color: #434343;
+  background-color: #e5e5e5;
 }
 
 .img-slide-button:active {
-  transform: translateY(0.5px);
+  transform: translateY(1px);
 }
