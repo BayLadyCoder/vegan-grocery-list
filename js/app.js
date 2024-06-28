@@ -10,12 +10,26 @@ if (pathname === "/index.html" || pathname === "/") {
   addEventListeners();
 }
 
-// todo: create add product form (name (a-zA-Z and spaces only) , category(radio buttons), media urls (validate urls), mediaType (dropdown, image or video))
-// todo: add form validation using RegEx
-// todo: create product detail page (carousel, product description, nutrition facts table)
 // todo: create add to list function
 // todo: display button correctly according to product on the list
 
 // ! bonus
 // todo: save/retrieve grocery  list to/from local storage
 // todo: create add product function (save to local storage)
+
+const addToListButtons = document.querySelectorAll(".add-btn");
+addToListButtons.forEach((addToListButton) => {
+  addToListButton.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if (addToListButton.classList.contains("add-to-list")) {
+      addToListButton.textContent = "REMOVE FROM LIST";
+      addToListButton.classList.remove("add-to-list");
+      addToListButton.classList.add("remove-from-list");
+    } else {
+      addToListButton.textContent = "ADD TO LIST";
+      addToListButton.classList.remove("remove-from-list");
+      addToListButton.classList.add("add-to-list");
+    }
+  });
+});
