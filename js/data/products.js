@@ -3,42 +3,6 @@ export const products = [
     id: 1,
     name: "Bananas",
     category: "Produce",
-    pageUrl: "/banana.html",
-    description: `Bananas are a popular tropical fruit known for their sweet flavor,
-      creamy texture, and vibrant yellow skin. They are rich in essential
-      nutrients like potassium, vitamin C, vitamin B6, and dietary fiber,
-      making them an excellent source of energy and a healthy snack option.
-      Versatile in culinary applications, bananas can be eaten fresh, added
-      to cereals, blended into smoothies, baked into goods, or even grilled.
-      Regular consumption supports heart health, blood pressure regulation,
-      and digestive health. Bananas are a delicious, nutritious choice for a
-      quick snack or a versatile ingredient in various recipes.`,
-    nutritionFacts: [
-      {
-        servingSize: { amount: 1, unit: "large" },
-        gramWeight: { amount: 242, unit: "g" },
-        ounceWeight: { amount: 8, unit: "oz" },
-        calories: { amount: 0 },
-        cholesterolMg: { amount: 0, unit: "mg" },
-        cholesterolDV: { amount: 0, unit: "%DV" },
-        totalFatG: { amount: 0, unit: "g" },
-        totalFatDV: { amount: 0, unit: "%DV" },
-        sodiumMg: { amount: 0, unit: "mg" },
-        sodiumDV: { amount: 0, unit: "%DV" },
-        potassiumMg: { amount: 0, unit: "mg" },
-        potassiumDV: { amount: 0, unit: "%DV" },
-        totalCarbG: { amount: 0, unit: "g" },
-        totalCarbDV: { amount: 0, unit: "%DV" },
-        dietaryFiberG: { amount: 0, unit: "g" },
-        dietaryFiberDV: { amount: 0, unit: "%DV" },
-        sugar: { amount: 0, unit: "g" },
-        protein: { amount: 0, unit: "g" },
-        vitaminA: { amount: 0, unit: "%DV" },
-        vitaminC: { amount: 0, unit: "%DV" },
-        calcium: { amount: 0, unit: "%DV" },
-        iron: { amount: 0, unit: "%DV" },
-      },
-    ],
     media: [
       {
         type: "image",
@@ -49,8 +13,8 @@ export const products = [
         url: "https://i5.walmartimages.com/asr/e6e55b3e-7573-4bf3-ab68-ec311d935d0a.d0f96a79a4a576b7f0a3582e79427ca1.jpeg",
       },
       {
-        type: "image",
-        url: "https://i5.walmartimages.com/asr/7e532031-e661-4249-9a2d-0a813455205b.d2500f5272d93e4ec7184a2f0e17c279.jpeg",
+        type: "video",
+        url: "https://www.youtube.com/embed/2URebOQM8G8?si=QvVC8LhirAa2QhB8",
       },
     ],
   },
